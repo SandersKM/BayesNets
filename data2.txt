@@ -1,0 +1,7 @@
+node CLOUDY { parents null ; probs 0.50  };
+node SPRINKLER { parents CLOUDY ; probs 0.10  0.50  };
+node RAIN { parents CLOUDY ; probs 0.80  0.20  };
+node WET_GRASS { parents RAIN SPRINKLER ; probs .99 .90 .90 .00  };
+
+// P(a|p) , P(a|p*) 
+// P(a|p1, p2) , P(a|p1, p2*), P(a|p1* , p2), P(a|p1*, p2*)

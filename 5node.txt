@@ -1,0 +1,8 @@
+node B { parents ; probs 0.001 };
+node E { parents ; probs 0.002 };
+node A { parents B E ; probs .950 .290 .940  .001 };
+node J { parents A ; probs .900 .050 };
+node M { parents A ; probs .700 .010 };
+
+// P(a|p) , P(a|p*) 
+// P(a|p1, p2) , P(a|p1*, p2), P(a|p1 , p2*), P(a|p1*, p2*)

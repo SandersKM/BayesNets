@@ -1,0 +1,29 @@
+node A { parents ; probs 0.2 };
+node B { parents ; probs .05 };
+node C { parents B A ; probs .98958 .9899 .01099 .5 };
+node D { parents  C ; probs .98958 .01408 };
+node E { parents  ; probs .01 };
+node F { parents C ; probs .98958 .01042 };
+node G { parents E ; probs .9899 .5 };
+node H { parents  ; probs .05 };
+node I { parents O H ; probs .9899 .5 .9899 .0101 };
+node J { parents G K ; probs .9899 .75 .98901 .01099 };
+node K { parents L O ; probs .98958 .96774 .01042 .0101 };
+node L { parents A B ; probs .5 .98 .8 .94737 };
+node M { parents ; probs .2 };
+node N { parents Y G S M  ; probs .01 .01 .01 .01 .01 .01 .05 .01 .05 .01 .05 .01 .95 .3 .95 .3 };
+node O { parents  N ; probs .90909 .01099 };
+node P { parents  R O ; probs .5 .9899 .5 .0101 };
+node Q { parents R O ; probs .5 .9899 .5 .0101 };
+node R { parents ; probs .1 };
+node S { parents Z T ; probs .9899 .0101 .9899 .98571 };
+node T { parents W V ; probs .1 .01 .95 .05 };
+node U { parents V ; probs .01235 .5 };
+node V { parents ; probs .01 };
+node W { parents  ; probs .94845 };
+node X { parents W ; probs .9898 .80 };
+node Y { parents X ; probs .5 .98901 };
+node Z { parents  X ; probs .98958 .98958 };
+
+// P(a|p) , P(a|p*) 
+// P(a|p1, p2) , P(a|p1*, p2), P(a|p1 , p2*), P(a|p1*, p2*)
